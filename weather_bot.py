@@ -7,7 +7,7 @@ bot = telebot.TeleBot("Bot API")
 
 @bot.message_handler(commands=['start', 'help'])
 def send_welcome(message):
-    bot.reply_to(message, "Howdy, how are you doing?")
+    bot.reply_to(message, "Hi, how are you doing?")
 
 
 @bot.message_handler(content_types=['text'])
